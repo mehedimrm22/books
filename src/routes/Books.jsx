@@ -64,14 +64,16 @@ function Books() {
   return (
     <Box sx={{ mx: "auto", p: 2 }}>
       {/* Search Input Added here */}
-      <TextField
-        label="Search by title, author, or genre"
-        variant="outlined"
-        fullWidth
-        value={search}
-        onChange={handleSearchChange}
-        sx={{ mb: 2 }}
-      />
+      <Box
+        sx={{
+          mb: 2,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <TextField label="Search" variant="outlined" sx={{ width: 300 }} />
+      </Box>
       {loading && <CircularProgress />}
       {!loading && books && (
         <div>

@@ -68,6 +68,28 @@
       "stars": "5",
       "id": 5,
       "img": "https://www.davidjpphillips.com/wp-content/uploads/2023/08/highonlife_copy-195x300.jpg"
+    },
+    {
+      "author": "",
+      "name": "Some",
+      "genres": [],
+      "completed": false,
+      "start": null,
+      "end": null,
+      "stars": null,
+      "id": 6
+    },
+    {
+      "author": "Someone",
+      "name": "Something",
+      "genres": [
+        "Mystery"
+      ],
+      "completed": false,
+      "start": "11/02/1",
+      "end": null,
+      "img": "https://unsplash.com/photos/a-white-shelf-with-a-car-on-top-of-it-C1PxxGJ21do",
+      "id": 7
     }
   ]
 }
