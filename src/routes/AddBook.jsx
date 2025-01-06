@@ -11,7 +11,7 @@ import Alert from "@mui/material/Alert";
 import { DateField } from "@mui/x-date-pickers/DateField";
 import useAxios from "../services/useAxios";
 import { bookGenres } from "../genres";
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, Box } from "@mui/material";
 
 // AddBook function provides a form for the user to add a new book
 function AddBook() {
@@ -114,15 +114,21 @@ function AddBook() {
         <DateField name="start" label="Started" />
         <DateField name="end" label="Finished" disabled={!book.completed} />
         <Stack spacing={1}>
-          <Rating
-            name="stars"
-            value={rateValue}
-            onClick={rateChangeHandler}
-            size="large"
-            onChange={(event, newValue) => {
-              setRateValue(newValue);
-            }}
-          />
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="space-between"
+          >
+            <Rating
+              name="stars"
+              value={rateValue}
+              onClick={rateChangeHandler}
+              size="large"
+              onChange={(event, newValue) => {
+                setRateValue(newValue);
+              }}
+            />
+          </Box>
         </Stack>
         <Button variant="contained" type="submit">
           Add new
