@@ -72,7 +72,13 @@ function Books() {
           alignItems: "center",
         }}
       >
-        <TextField label="Search" variant="outlined" sx={{ width: 300 }} />
+        <TextField
+          label="Search"
+          variant="outlined"
+          value={search}
+          onChange={handleSearchChange}
+          sx={{ width: 300 }}
+        />
       </Box>
       {loading && <CircularProgress />}
       {!loading && books && (
