@@ -17,6 +17,8 @@ import { Stack, Typography, Box } from "@mui/material";
 function AddBook() {
   const { alert, post } = useAxios("http://localhost:3000");
   const [rateValue, setRateValue] = useState(3);
+  const defaultImg =
+    "https://st2.depositphotos.com/1069290/5358/v/450/depositphotos_53581759-stock-illustration-book-icon-vector-logo.jpg";
   const [book, setBook] = useState({
     author: "",
     name: "",
@@ -58,7 +60,15 @@ function AddBook() {
   //adds book data to the server
   const postHandler = async (e) => {
     e.preventDefault();
-    await post("books", book);
+    const bookWithDefaultImg = {
+      ...book,
+      img: book.img || defaultImg,
+    };
+    try {
+      await post("books", bookWithDefaultImg);
+    } catch (error) {
+      console.error("Error adding book:", error);
+    }
   };
 
   return (
