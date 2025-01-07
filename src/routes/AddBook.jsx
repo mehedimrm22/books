@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
@@ -56,9 +56,10 @@ function AddBook() {
   };
 
   //adds book data to the server
-  function postHandler() {
-    post("books", book);
-  }
+  const postHandler = async (e) => {
+    e.preventDefault();
+    await post("books", book);
+  };
 
   return (
     <form onChange={addBookHandler} onSubmit={postHandler}>
@@ -67,7 +68,17 @@ function AddBook() {
         alignItems="stretch"
         sx={{ my: 2, mx: "auto", width: "25%" }}
       >
-        {alert.show && <Alert severity={alert.type}>{alert.message}</Alert>}
+        {alert.show && (
+          <Alert
+            severity={alert.type}
+            sx={{
+              transition: "opacity 0.5s ease",
+              animation: "fadeout 5s forwards",
+            }}
+          >
+            {alert.message}
+          </Alert>
+        )}
         <Typography variant="h4" component="h2" sx={{ my: 10 }}>
           Add a book
         </Typography>
