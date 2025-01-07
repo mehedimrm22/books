@@ -70,24 +70,28 @@
       "img": "https://www.davidjpphillips.com/wp-content/uploads/2023/08/highonlife_copy-195x300.jpg"
     },
     {
-      "author": "",
-      "name": "Some",
-      "genres": [],
-      "completed": false,
-      "start": null,
-      "end": null,
-      "stars": null,
-      "id": 6
-    },
-    {
       "author": "Someone",
       "name": "Something",
       "genres": [
-        "Mystery"
+        "Fantasy"
+      ],
+      "completed": true,
+      "start": "11/12/0",
+      "end": null,
+      "stars": "5",
+      "img": "https://images.unsplash.com/photo-1724004546082-edaf801e3129?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 6
+    },
+    {
+      "author": "Anyone",
+      "name": "Anything",
+      "genres": [
+        "Thriller"
       ],
       "completed": false,
-      "start": "11/02/1",
+      "start": "02/12/1",
       "end": null,
+      "stars": "5",
       "img": "https://unsplash.com/photos/a-white-shelf-with-a-car-on-top-of-it-C1PxxGJ21do",
       "id": 7
     },
@@ -95,29 +99,14 @@
       "author": "Someone",
       "name": "Something",
       "genres": [
-        "Adventure",
-        "Science Fiction"
+        "Dystopian"
       ],
-      "completed": true,
-      "start": "11/11/1",
-      "end": "02/12/4",
+      "completed": false,
+      "start": "11/11/2",
+      "end": null,
       "stars": null,
       "img": "https://images.unsplash.com/photo-1724004546082-edaf801e3129?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "id": 8
-    },
-    {
-      "author": "One",
-      "name": "Some",
-      "genres": [
-        "Romance",
-        "Fantasy"
-      ],
-      "completed": false,
-      "start": "11/12/1",
-      "end": null,
-      "stars": "5",
-      "img": "https://unsplash.com/photos/a-white-shelf-with-a-car-on-top-of-it-C1PxxGJ21do",
-      "id": 9
     }
   ]
 }
