@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 //import axios from "axios";
 import useAxios from "../services/useAxios";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Card,
@@ -18,16 +19,12 @@ import {
 // it fetches and shows the list of the books
 // useAxios implemented
 function Books() {
-  //const [books, setBooks] = useState([]);
-  //const [isLoading, setIsLoading] = useState(true);
   const { data: books, loading, get } = useAxios("http://localhost:3000");
   const [search, setSearch] = useState("");
   const [filteredBooks, setFilteredBooks] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    /* if (books.length === 0) {
-      getBooks();
-    } */
     get("books");
   }, []);
 
@@ -135,7 +132,14 @@ function Books() {
                       readOnly
                       size="small"
                     />
-                    <Button size="small">Learn More</Button>
+                    <Button
+                      size="small"
+                      onClick={() => {
+                        navigate(`/book/${book.id}`); // Navigate to the detailed page
+                      }}
+                    >
+                      Learn More
+                    </Button>
                   </CardActions>
                 </Card>
               ))
