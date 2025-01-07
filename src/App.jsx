@@ -6,6 +6,7 @@ import Root from "./routes/Root";
 import Books from "./routes/Books";
 import Book from "./routes/Book";
 import AddBook from "./routes/AddBook";
+import SinglePage from "./routes/SinglePage";
 
 // custom theme for material UI
 const theme = createTheme({
@@ -29,6 +30,7 @@ function App() {
         { path: "/", element: <Books /> },
         { path: "/book", element: <Book /> },
         { path: "/addnew", element: <AddBook /> },
+        { path: "/book/:id", element: <SinglePage /> },
       ],
     },
   ]);
