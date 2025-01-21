@@ -1,0 +1,125 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "author": "Antoine de Saint-Exupéry",
+      "name": "The Little Prince",
+      "genres": [
+        "Fantasy",
+        "Adventure"
+      ],
+      "completed": true,
+      "start": "2023-03-10",
+      "end": "2023-03-25",
+      "stars": 5,
+      "img": "https://upload.wikimedia.org/wikipedia/en/0/05/Littleprince.JPG"
+    },
+    {
+      "id": 2,
+      "author": "Walter Isaacson",
+      "name": "Steve Jobs",
+      "genres": [
+        "Biography",
+        "Business"
+      ],
+      "completed": true,
+      "start": "2023-04-05",
+      "end": "2023-04-30",
+      "stars": 4,
+      "img": "https://upload.wikimedia.org/wikipedia/en/e/e4/Steve_Jobs_by_Walter_Isaacson.jpg"
+    },
+    {
+      "id": 3,
+      "author": "George Orwell",
+      "name": "1984",
+      "genres": [
+        "Science Fiction",
+        "Dystopian"
+      ],
+      "completed": true,
+      "start": "2023-05-10",
+      "end": "2023-05-31",
+      "stars": 5,
+      "img": "https://images.booksense.com/images/935/524/9780451524935.jpg"
+    },
+    {
+      "id": 4,
+      "author": "J.K. Rowling",
+      "name": "Harry Potter and the Sorcerer's Stone",
+      "genres": [
+        "Fantasy",
+        "Adventure"
+      ],
+      "completed": true,
+      "start": "2023-06-15",
+      "end": "2023-07-10",
+      "stars": 5,
+      "img": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61pX0NiXdvL._AC_.jpg"
+    },
+    {
+      "author": "David JP Phillips",
+      "name": "High on Life",
+      "genres": [
+        "Non-Fiction"
+      ],
+      "completed": true,
+      "start": null,
+      "end": null,
+      "stars": "5",
+      "id": 5,
+      "img": "https://www.davidjpphillips.com/wp-content/uploads/2023/08/highonlife_copy-195x300.jpg"
+    },
+    {
+      "author": "Someone",
+      "name": "Something",
+      "genres": [
+        "Fantasy"
+      ],
+      "completed": true,
+      "start": "11/12/0",
+      "end": null,
+      "stars": "5",
+      "img": "https://images.unsplash.com/photo-1724004546082-edaf801e3129?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 6
+    },
+    {
+      "author": "Anyone",
+      "name": "Anything",
+      "genres": [
+        "Thriller"
+      ],
+      "completed": false,
+      "start": "02/12/1",
+      "end": null,
+      "stars": "5",
+      "img": "https://unsplash.com/photos/a-white-shelf-with-a-car-on-top-of-it-C1PxxGJ21do",
+      "id": 7
+    },
+    {
+      "author": "Someone",
+      "name": "Something",
+      "genres": [
+        "Dystopian"
+      ],
+      "completed": false,
+      "start": "11/11/2",
+      "end": null,
+      "stars": null,
+      "img": "https://images.unsplash.com/photo-1724004546082-edaf801e3129?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "id": 8
+    },
+    {
+      "author": "One",
+      "name": "Something",
+      "genres": [
+        "Dystopian"
+      ],
+      "completed": false,
+      "start": "02/12/1",
+      "end": null,
+      "stars": "4",
+      "img": "https://st2.depositphotos.com/1069290/5358/v/450/depositphotos_53581759-stock-illustration-book-icon-vector-logo.jpg",
+      "id": 9
+    }
+  ]
+}
